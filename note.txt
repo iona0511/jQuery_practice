@@ -23,3 +23,13 @@ html css support
 selector
 一次選擇多個 $(".btn,.btns")
 
+
+basic filter
+:eq() - 選取第 n 個(從0開始計算)
+:even - 選取偶數個
+:odd - 選取奇數個
+:first - 選取第一個
+:last - 選取最後一個
+:gt() - 選取大於第 n 個的(也可以給負數)
+:lt() - 選取小於第 n 個的(也可以給負數)
+:header - 選取 h1~h6
