@@ -18,3 +18,8 @@ global file
 
 
 html css support
+
+
+selector
+一次選擇多個 $(".btn,.btns")
+
