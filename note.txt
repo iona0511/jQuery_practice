@@ -33,3 +33,49 @@ basic filter
 :gt() - 選取大於第 n 個的(也可以給負數)
 :lt() - 選取小於第 n 個的(也可以給負數)
 :header - 選取 h1~h6
+
+20220614
+
+filter直接到終點
+:
+filtering要轉機
+.
+
+
+parentuntil 不包含本身
+siblings不包含本身
+
+任何選擇器都是從document出發
+
+prop & attr = attribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+考
+react生命週期
+SSR=server side rendor
+target & currentTarget
+
+
+empty內容清空 節點還在
+remove是連結點都清空
+
+
+練習二改的事val
