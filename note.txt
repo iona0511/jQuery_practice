@@ -51,6 +51,12 @@ prop & attr = attribute
 
 
 
+20220615
+hover裡面可放兩個function
+
+高階函式～把函式當參數傳進funct
+
+
 
 
 
