@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"
+    />
+        <style>
+            .fontS{
+                font-size: 0.8rem;
+            }
+            .fontM{
+                font-size: 1rem;
+            }
+            .fontL{
+                font-size: 1.2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary fontS">S</button>
+            <button type="button" class="btn btn-secondary active fontM">M</button>
+            <button type="button" class="btn btn-secondary fontL">L</button>
+          </div>
+          <h2>QQQQ</h2>
+          <p>有可能自感情整造，自己就可以真的⋯覺不記得前的會被女孩迦爾納的信，的音離就好了一下去的：男朋友賺還比較都已，才知道哪個的對象。不要在⋯讓哈哈哈兩個應該會不過西五条，就會以當天，苦了會的小人家可以開⋯我他的知道為設定，現盼望用我。以不好了一張很多人一樣忙毫無，我，有些趕種的前的，真的又下來的，不下去就算是，回來也沒有可以己的心。遺書上他這是一可愛的，保暖快樂，要們的果我話會，沒作，上去⋯的小相關的地方集中？</p>
+        <script src="../js/jquery-3.6.0.js"></script>
+        <script>
+            // $('.fontS').click(function(){
+            //     $('h2').addClass('fontS');
+            //     $('p').addClass('fontS');
+            //     $('h2').removeClass('fontM');
+            //     $('p').removeClass('fontM');
+            //     $('h2').removeClass('fontL');
+            //     $('p').removeClass('fontL');
+
+            // })
+            // $('.fontM').click(function(){
+            //     $('h2').addClass('fontM');
+            //     $('p').addClass('fontM');
+            //     $('h2').removeClass('fontS');
+            //     $('p').removeClass('fontS');
+            //     $('h2').removeClass('fontL');
+            //     $('p').removeClass('fontL');
+
+            // })
+            // $('.fontL').click(function(){
+            //     $('h2').addClass('fontL');
+            //     $('p').addClass('fontL');
+            //     $('h2').removeClass('fontS');
+            //     $('p').removeClass('fontS');
+            //     $('h2').removeClass('fontM');
+            //     $('p').removeClass('fontM');
+
+            // })
+
+
+
+            $('.btn').click(function(){
+                console.log('this',$(this).is(":contains('S')"));
+                $(this).addClass("active").siblings().removeClass("active")
+                if($(this).is(":contains('S')")){
+                    $('p').removeClass();
+                    $('p').toggleClass("fontS");
+                }
+                if($(this).is(":contains('M')")){
+                    $('p').removeClass();
+                    $('p').toggleClass("fontM");
+                }
+                if($(this).is(":contains('L')")){
+                    $('p').removeClass();
+                    $('p').toggleClass("fontL");
+                }
+            })
+        </script>
+    </body>
+</html>
