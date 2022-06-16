@@ -56,6 +56,9 @@ hover裡面可放兩個function
 
 高階函式～把函式當參數傳進funct
 
+20220616
+預設是bubble
+
 
 
 
