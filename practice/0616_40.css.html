@@ -17,12 +17,26 @@
     <div class="box"></div>   
     <script src="../js/jquery-3.6.0.js"></script>
     <script>
-        console.log($('.box').css('background-color'));
-        $('.box').click(function(){
-            if($('.box').css('background-color')==='rgb(127, 255, 212)'){$('.box').css('background-color','red')}else{
-                $('.box').css('background-color','blue')
-            }
+        let style1 ={
+            color : "#afa"
+        };
+        let style2 ={
+            color : "#ffa"
+        };
+
+        $('.box').css(style1);
+
+        $(".box").click(function(){
+            $('.box').css("width","+=100");
         })
+
+
+        // console.log($('.box').css('background-color'));
+        // $('.box').click(function(){
+        //     if($('.box').css('background-color')==='rgb(127, 255, 212)'){$('.box').css('background-color','red')}else{
+        //         $('.box').css('background-color','blue')
+        //     }
+        // })
     </script>
 </body>
 </html>
