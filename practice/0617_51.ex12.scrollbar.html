@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500vh;
+            margin: 0;
+        }
+        .banner{
+            height: 80vh;
+        }
+        nav{
+            background: #afa;
+        }
+        nav.fixed{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <nav class="fixed">nav</nav>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+        // 時機點 window
+        $(window).resize(function(){
+            console.log("devicePixelRatio",window.devicePixelRatio)
+        })
+        const navTop = $('nav').offset().top;
+
+       $(window).scroll(function(){
+        // console.log($('nav').offset().top);
+           if($(window).scrollTop()>=navTop){
+               $("nav").addClass("fixed")
+           }else{
+               $("nav").removeClass("fixed");
+           }
+       })
+
+    </script>
+</body>
+</html>
