@@ -64,7 +64,7 @@
         <script src="../js/jquery-3.6.0.js"></script>
         <script>
 
-            function move(cssName,direction,speed){
+            function move(cssName,direction){
                 $('.box').css(cssName,`${direction}100`);
 
             }
@@ -78,9 +78,12 @@
                     move('left','-=');
                 }
             })
-            $('#down').click(function(){
-                if(parseInt($('.box').css('bottom'))>0){
-                    move('bottom','+=');
+            $(document).on('keydown',function(e){
+                console.log('keycode',e.keyCode)
+                if(e.keyCode===39){
+                    move('left',"+=")
+                }if(e.keyCode===37){
+                    move('left',"-=")
                 }
             })
             

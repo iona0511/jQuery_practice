@@ -88,3 +88,10 @@ remove是連結點都清空
 
 
 練習二改的事val
+
+
+
+20220617
+pixijs動畫
+
+label for 跟 input 的id要一致
